@@ -1,0 +1,112 @@
+:root {
+    /*primary*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /*neutral*/
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+#main {
+    
+}
+#background {
+    height: 100vh;
+    background-color: var(--pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#container {
+    margin: auto;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.header {
+    height: 180px;
+}
+.header__img { 
+    width: 100%;
+}
+.content {
+    margin: 0 30px;
+    padding: 20px 0 5px;
+}
+.content__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.content__heading-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.content__heading-description {
+   font-size: 14px;
+   line-height: 1.6;
+}
+.content__body {
+    display: flex;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    padding: 20px;
+    border-radius: 15px;
+}
+.content__body-icon {
+
+}
+.content__body-name {
+    flex: 1;
+    padding: 0 20px;
+    line-height: 25px;
+}
+.content__body-change {
+    text-decoration: none;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.content__payment {
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 10px var(--desaturated-blue);
+    color: white;
+}
+.content__body-change:hover,
+.content__payment:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.content__cancel {
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    color: rgba( 0, 0, 0, 0.5);
+}
+.content__cancel:hover {
+    color: black;
+    cursor: pointer;
+}
+.content__payment, .content__cancel {
+    padding: 15px;
+    font-weight: 750;
+}
