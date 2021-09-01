@@ -1,0 +1,123 @@
+:root {
+    /*primary*/
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    /*neutral*/
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#main {
+    display: flex;
+    height: 100vh;
+    background-color: var(--light-grayish-blue);
+}
+#container {
+    margin: auto;
+    width: 1000px;
+    height: 80vh;
+    display: flex;
+}
+.box-img {
+    position: relative;
+}
+.box-large__img {
+    position: absolute;
+    right: calc(100% / 6);
+}
+.box-top .box-large .content {
+    position: relative;
+}
+#container-left {
+    width: 75%;
+    margin-right: 10px;
+}
+#container-right {
+    border-radius: 10px;
+    width: 25%;
+    background-color: var(--white);
+    margin-left: 10px;
+}
+.box-top {
+    display: flex;
+    height: calc(50% - 10px);
+}
+.box-bot {
+    display: flex;
+    height: calc(50% - 10px);
+    margin-top: 20px;
+}
+.box-small {
+    border-radius: 10px;
+    background-color: yellow;
+}
+.box-large {  
+    border-radius: 10px;
+    background-color: red;
+}
+.box-top .box-large {
+    margin-right: 20px;
+    background-color: var(--moderate-violet);
+}
+.box-top .box-small {
+    background-color: var(--very-dark-grayish-blue);
+}
+.box-bot .box-small {
+    margin-right: 20px;
+    background-color: var(--white);
+}
+.box-bot .box-large {
+    background-color: var(--very-dark-blackish-blue);
+}
+.content {
+    margin: 20px;
+}
+.heading {
+    height: 30px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.avatar {
+    height: 100%;
+    border-radius: 50%;
+}
+.infor {
+    margin-left: 15px;
+}
+.name {
+    font-weight: 600;
+}
+.box-top .name, .box-top .title,
+.box-bot .box-large .name, .box-bot .box-large .title {
+    color: var(--white);
+}
+.box-top .subname, .box-top .description,
+.box-bot .box-large .subname, .box-bot .box-large .description {
+    color: var(--light-gray);
+}
+.subname {
+    font-weight: 500;
+    opacity: 50%;
+}
+.title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.description {
+    opacity: 70%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+}
