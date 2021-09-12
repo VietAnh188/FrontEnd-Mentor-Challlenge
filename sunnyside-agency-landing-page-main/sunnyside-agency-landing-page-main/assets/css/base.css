@@ -12,9 +12,26 @@
     --grayish-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%);
 }
+* {
+    box-sizing: border-box;
+}
 body {
     font-size: 18px;
 }
 .font-2 {
     font-family: 'Fraunces', serif;
+}
+.out-right {
+    position: relative;
+    min-width: 430px;
+}
+.heading--small {
+    font-size: 30px !important;
+    padding-right: 0 !important;
+}
+.info--text-center {
+    text-align: center;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 330px;
 }
